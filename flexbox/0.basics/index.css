@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h2 {
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    display: inline-flex;
+    border: 5px solid black;
+}
+
+.flex-element {
+    padding: 10px;
+    background-color: #E53935;
+}
+
+.flex-element:nth-child(2) {
+    background-color: #8E24AA;
+}
+
+.flex-element:nth-child(3) {
+    background-color: #3F51B5;
+}
