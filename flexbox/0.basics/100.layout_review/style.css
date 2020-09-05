@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: #ffcc99;
+    background: linear-gradient(to right,#ff8c1a, #ffcc99 );
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.site-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00ccff;
+    color: white;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .site-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav a {
+        margin-right: 10px;
+    }
+}
+
+
+.container {
+    background-color: white;
+    padding: 10px 30px 10px 30px;
+    height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-aside-container {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    color: white;
+    background-color: #00ccff;
+    order: -1;
+    background-color: 
+
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex: 0 0 100%;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.services:nth-child(1) {
+    background-color: red;
+}
+
+.services:nth-child(2) {
+    background-color: purple;
+}
+
+.services:nth-child(3) {
+    background-color: blue;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: purple;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+/* When width > 768px */
+@media screen and (min-width: 768px) {
+    .main-aside-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    aside {
+        order: 1;
+        flex: 0 0 calc(40% - 10px);
+    }
+
+    .main-content {
+        display: flex;
+        flex: 0 0 calc(60% - 10px);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .services {
+        flex: 0 0 calc(33.33% - 10px);
+        padding: 20px 40px;
+    }
+
+}

@@ -5,44 +5,38 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
+h1, h2, h3, h4 {
     text-align: center;
 }
+
+body {
+    background-color: orange;
+}
+
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .flex-container {
     display: flex;
-    border: 5px solid black;
-    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: white;
 
-
-    //flex-direction: row;
-    //flex-wrap: wrap;
-
-    flex-flow: row wrap;
 }
 
 .flex-element {
-    padding: 10px;
+    flex: 0 0 100%;
+    padding: 20px 40px 0 40px;
 }
 
-.flex-element {
-    border: 1px solid black;
 
-}
+@media (min-width: 768px) {
+    .flex-element {
+        flex: 0 0 50%;
+    }
 
-.flex-element:nth-child(1) {
-  background-color: red;
-}
-
-.flex-element:nth-child(2) {
-    background-color: blue;
-}
-
-.flex-element:nth-child(3) {
-    background-color: green;
+    .element-3 {
+        flex: 0 0 100%;
+    }
 }

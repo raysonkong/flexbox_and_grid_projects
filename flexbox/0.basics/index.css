@@ -22,13 +22,19 @@ h1 {
 .flex-container {
     display: flex;
     display: inline-flex;
-    width: 2000px;
+    width: 1000px;
     border: 5px solid black;
 
     /*  Flex Direction  */
     /*  row, row-reverse, column, column-reverse     */
 
     /* Flox flow: row wrap*/
+
+
+    /* Flex Alignment */
+    height: 600px;
+    justify-content: space-end;
+    align-items: flex-start;
 }
 
 .flex-element {
@@ -41,7 +47,7 @@ h1 {
 
 .flex-element:nth-child(1) {
     background-color: red;
-
+    margin-right: auto;
 
     //flex-grow: 3;
     //flex-shrink: 6;
@@ -49,7 +55,8 @@ h1 {
 
     /*Flex short hand for grow, shrink, basis*/
     /* The below will set the element at 600px*/
-    flex: 0 0 600px;
+    //flex: 0 0 600px;
+    //align-self: center;
 
 }
 

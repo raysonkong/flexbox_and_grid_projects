@@ -53,6 +53,7 @@ nav a {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px 30px 0 30px;
+
 }
 h1, h2 {
     text-align: center;
@@ -62,7 +63,10 @@ h2 {
     color:white;
 }
 
+/*********************/
+/*   Main  Section */
 .flex-container {
+    /* Main Section */
     margin-top: 20px;
     /* Flex here*/
     display: flex;
@@ -151,4 +155,8 @@ footer {
 footer p {
     color: white;
     font-size: 1.4rem;
+}
+
+footer {
+    background-color: purple;
 }
