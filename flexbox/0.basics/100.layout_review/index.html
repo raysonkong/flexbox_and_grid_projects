@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Layout</title>
+    <title>Flexbox layout</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
     <div class="container">
         <header class="site-name">
-            <h1>FlexBox</h1>
+            <h1>Site Name</h1>
             <nav>
-                <a href="#">Product 1</a>
-                <a href="#">Product 2</a>
-                <a href="#">Product 3</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact Us</a>
             </nav>
         </header>
 
-        <main>
-            <div class="main-aside-container">
-                <div class="main-content">
-                    <div class="services service-1">Service 1</div>
-                    <div class="services service-2">Service 2</div>
-                    <div class="services service-3">Service 3</div>
-                </div>
-
-                <aside>
-                    <h2>Our Blog</h2>
-                      <ul>
-                        <li><a href="#">Blog Post 1</a></li>
-                        <li><a href="#">Blog Post 1</a></li>
-                        <li><a href="#">Blog Post 1</a></li>
-                        <li><a href="#">Blog Post 1</a></li>
-                        <li><a href="#">Blog Post 1</a></li>
-                      </ul>
-                </aside>
-
+        <main class="flex-container">
+            <div class="main-content">
+                <div class="services">
+                    <div class="service service-1">
+                       <h2>Service 1</h2>
+                    </div> 
+                    <div class="service service-2">
+                       <h2>Service 2</h2>
+                    </div>
+                    <div class="service service-3">
+                       <h2>Service 3</h2>
+                    </div>
+                </div>                
             </div>
+
+
+           <aside class="blog">
+               <h2>From our Blog</h2>
+               <ul>
+                   <li><a href="#">Blog Post 1</a></li>
+                   <li><a href="#">Blog Post 2</a></li>
+                   <li><a href="#">Blog Post 3</a></li>
+                   <li><a href="#">Blog Post 4</a></li>
+                   <li><a href="#">Blog Post 5</a></li>
+               </ul>
+           </aside>
         </main>
 
         <footer>
             <p>All Rights Reserved</p>
         </footer>
+        
     </div>
 </body>
 </html>

@@ -9,92 +9,112 @@ html {
 body {
     box-sizing: border-box;
     margin: 0;
+    background: #f5a142;
     background: linear-gradient(to right, #ff4100, #e67453);
+    padding: 0;
 }
 
 .container {
     background-color: white;
-    min-height: calc(100vh - 20px);
-    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px 30px 0 30px;
+    min-height: 100vh;
+    max-width: 1000px;
+    padding: 10px;
 }
 
 /* Header */
-.site-name {
-    background-color: #03A9F4;
-    padding: 0 20px;
+
+header {
     display: flex;
     flex-direction: column;
-}
-
-.site-name h1 {
-    color: white;
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    background: #03A9F4;
+    justify-content: space-between;
     align-items: center;
+    color: white;
+    margin-bottom: 10px;
 }
 
-nav a {
-    text-decoration: none;
+header a {
     color: white;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        margin-bottom: 10px;
+    }
+
     .site-name {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        padding: 0 20px;
     }
 
-    nav {
+    header nav {
         display: flex;
         flex-direction: row;
     }
 
-    nav a {
-        margin: 0 10px 0 0 ;
+    header a {
+        margin-right: 10px
     }
 }
 
-/* Main Content */
+/* Main content */
 
 .flex-container {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
 
-aside a {
+aside {
+    color: white;
+    order: -1;
+    background-color: #03A9F4;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+.blog {
+    margin-bottom: 10px;
+}
+
+.blog ul {
+    list-style: none;
+}
+
+.blog a {
     color: white;
     text-decoration: none;
 }
 
-aside ul {
-    list-style: none;
+.services {
+    display: flex;
+    flex-direction: column;
 }
 
-aside h2 {
-    color: white;
+.services h2 {
     text-align: center;
 }
 
-aside {
-    background-color: #03A9F4;
-    order: -1;
-    margin-bottom: 2rem;
+.service {
+    padding: 5px 0;
 }
 
 .service-1 {
-    background: red;
+    background-color: red;
 }
 
 .service-2 {
@@ -105,29 +125,16 @@ aside {
     background-color: blue;
 }
 
-.service h2 {
-    text-align: center;
-}
-
-.service {
-    padding-top:5px;
-    padding-bottom: 5px;
-    color: white;
-}
-
-.services {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.services .service {
-    flex: 0 0 100%;
-}
 @media screen and (min-width: 768px) {
     .flex-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    aside {
+        order: 1;
+        flex: 0 0 40%;
     }
 
     .main-content {
@@ -140,21 +147,19 @@ aside {
         justify-content: space-between;
     }
 
-    .services .service {
+    .service {
         flex: 0 0 calc(33.33% - 0.5rem);
-    }
-
-    aside {
-        flex: 0 0 40%;
-        order: 2;
     }
 }
 
+/* Footer */
+
 footer {
-    height: 100px;
-    background-color: #8E24AA;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: purple;
+    color: white;
+    padding: 10px 0;
+    margin-top: 10px;
 }
